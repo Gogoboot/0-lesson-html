@@ -108,7 +108,54 @@ td, th { /*Стилизуем по названию тега*/
     text-align: center;
 }
 
+.table-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    text-align: center;
+    color: #363940;
+}
 
+.table-subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    color: #363940;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-linktable-link{
+    color: #0a61f7;
+}
+
+.table-button{
+    border: 1px solid #0a61f7;
+    border-radius: 4px;
+    width: 140px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.63333;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0a61f7;
+    padding: 8px;
+}
+
+.table-subtitle.gray{
+    color: #95a1bb;
+}
+
+.table-button.active{ /*эти свойства применяются если у кнопки будет оба этих класса*/
+    background-color: #0a61f7;
+    color: #fff;
+}
+
+.table-footer td{
+    padding: 30px 0;
+}
 
 
 
