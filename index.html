@@ -6,69 +6,77 @@
           content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-<header>
+<header class="header">
     <a href="">
-        <img src="./assets/images/Logo.svg" alt="">
+        <img class="logo-img" src="./assets/images/Logo.svg" alt="">
     </a>
-    <ul>
-        <li><a href="">Main</a></li>
-        <li><a href="">Rates</a></li>
-        <li><a href="">Create Account</a></li>
+    <ul class="menu">
+        <li class="menu-item">
+            <a class="menu-link" href="">Main</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="">Rates</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="">Create Account</a>
+        </li>
     </ul>
 </header>
-<section>
-    <h1>Markup achievement</h1>
-    <p>The harder you work for something, the greater you’ll feel when you achieve it</p>
-    <button>Learn more</button>
-    <img src="./assets/images/image.png" alt="">
+<section class="main">
+    <h1 class="main-title">Markup achievement</h1>
+    <p class="text">The harder you work for something, the greater you’ll feel when you achieve it</p>
+    <button class="button">Learn more</button>
+    <img class="main-img" src="./assets/images/image.png" alt="">
 </section>
-<section>
-    <h2>Rates</h2>
-    <p>Rates</p>
-    <table>
+<section class="rates-section">
+    <h2 class="title">Rates</h2>
+    <p class="text">Failure will never overtake me if my determination to succeed is strong enough.</p>
+    <table class="table">
         <tr>
-            <th>Features</th>
-            <th>Standart</th>
-            <th>Plus</th>
-            <th>PRO</th>
+            <th class="table-subtitle">Features</th>
+            <th class="table-title">Standart</th>
+            <th class="table-title">Plus</th>
+            <th class="table-title">PRO</th>
         </tr>
         <tr>
-            <th>Theory</th>
+            <th class="table-subtitle">Theory</th>
             <td><img src="./assets/images/Check.svg" alt=""></td>
             <td><img src="./assets/images/Check.svg" alt=""></td>
             <td><img src="./assets/images/Check.svg" alt=""></td>
         </tr>
         <tr>
-            <th>Practice</th>
+            <th class="table-subtitle">Practice</th>
             <td><img src="./assets/images/Close.svg" alt=""></td>
             <td><img src="./assets/images/Check.svg" alt=""></td>
             <td><img src="./assets/images/Check.svg" alt=""></td>
         </tr>
         <tr>
-            <th>Code review</th>
+            <th class="table-subtitle">Code review</th>
             <td><img src="./assets/images/Close.svg" alt=""></td>
             <td><img src="./assets/images/Close.svg" alt=""></td>
             <td><img src="./assets/images/Check.svg" alt=""></td>
 
         </tr>
         <tr>
-            <th>Have questions?</th>
+            <th class="table-subtitle">
+                <a class="table-link" href="">Have questions?</a>
+                <!--откуда здесь ссылка в макете нет-->
+            </th>
             <td>
-                <button>get now</button>
+                <button class="table-button">get now</button>
             </td>
             <td>
-                <button>get now</button>
+                <button class="table-button">get now</button>
             </td>
             <td>
-                <button>get now</button>
+                <button class="table-button">get now</button>
             </td>
-
         </tr>
     </table>
 </section>
@@ -88,38 +96,38 @@
         <input type="email" placeholder="Enter your email">
         <input type="password" placeholder="Enter your password">
         <input type="date">
-        <select  >
+        <select>
             <option selected disabled value="">Country</option>
             <option value="">Belarus</option>
             <option value="">China</option>
             <option value="">USA</option>
         </select>
-        <label for ="front">
+        <label for="front">
             <input id="front" type="radio" name="stack" checked>
             Frontend
         </label>
-        <label for ="back">
-            <input id="back" type="radio" name="stack" >
+        <label for="back">
+            <input id="back" type="radio" name="stack">
             Backend
         </label>
         <fieldset>
             <legend>Favorite Tehnologies</legend>
-        <label for="html">HTML
-            <input id="html" type="checkbox" name="html"  checked>
-            HTML
-        </label>
-        <label for="css">CSS
-            <input id="css" type="checkbox" name="css"  checked>
-            CSS
-        </label>
-        <label for="react">React
-            <input id="react" type="checkbox" name="react" >
-            React
-        </label>
-        <label for="sc">
-            <input id="sc" type="checkbox" name="sc" >
-            Styled component
-        </label>
+            <label for="html">HTML
+                <input id="html" type="checkbox" name="html" checked>
+                HTML
+            </label>
+            <label for="css">CSS
+                <input id="css" type="checkbox" name="css" checked>
+                CSS
+            </label>
+            <label for="react">React
+                <input id="react" type="checkbox" name="react">
+                React
+            </label>
+            <label for="sc">
+                <input id="sc" type="checkbox" name="sc">
+                Styled component
+            </label>
         </fieldset>
         <textarea placeholder="Something else about you..." cols="30" rows="10"></textarea>
         <input type="submit">
@@ -129,7 +137,7 @@
     <small>
         &copy; Copyright 2020, All Rights Reserved
     </small>
-<!--    <span> Copy</span>-->
+    <!--    <span> Copy</span>-->
 </footer>
 </body>
 </html>
