@@ -1,6 +1,9 @@
+/* ============== Common styles ============ */
+
+
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -22,7 +25,19 @@ button {
     background: transparent;
 }
 
-/* =============== Стиль для меню ============== */
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.34375;
+    color: #363940;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #95a1bb;
+}
 
 .header {
     background: #0a61f7;
@@ -40,14 +55,6 @@ button {
     /*text-align: right;*/
 }
 
-/*.main-img {*/
-/*    border-radius: 10px 10px 0 0;*/
-/*    width: 656px;*/
-/*    height: 650px;*/
-/*    !*background-image: url("./assets/images/image.png");*!*/
-/*}*/
-/* ============== Стили для 1 ой секции ==================== */
-
 .main-title {
     font-weight: 500;
     font-size: 58px;
@@ -56,11 +63,7 @@ button {
     margin-bottom: 30px;
 }
 
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.375;
-    color: #95a1bb;
+.main-title .text {
     margin-bottom: 40px;
 }
 
@@ -78,8 +81,6 @@ button {
     color: #fff;
 }
 
-/* ================== Стили для 2 ой секции ==============*/
-
 .rates-section {
     /*width: 1400px;*/
     /*height: 625px;*/
@@ -87,13 +88,12 @@ button {
     padding: 100px;
 }
 
-.title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.34375;
-    text-align: center;
-    color: #363940;
+.rates-section .title {
     margin-bottom: 20px;
+}
+
+.rates-section .text{
+margin-bottom: 40px;
 }
 
 .table {
@@ -108,7 +108,7 @@ td, th { /*Стилизуем по названию тега*/
     text-align: center;
 }
 
-.table-title{
+.table-title {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22222;
@@ -116,7 +116,7 @@ td, th { /*Стилизуем по названию тега*/
     color: #363940;
 }
 
-.table-subtitle{
+.table-subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57143;
@@ -125,11 +125,11 @@ td, th { /*Стилизуем по названию тега*/
     padding-left: 20px;
 }
 
-.table-linktable-link{
+.table-link {
     color: #0a61f7;
 }
 
-.table-button{
+.table-button {
     border: 1px solid #0a61f7;
     border-radius: 4px;
     width: 140px;
@@ -144,17 +144,100 @@ td, th { /*Стилизуем по названию тега*/
     padding: 8px;
 }
 
-.table-subtitle.gray{
+.table-subtitle.gray {
     color: #95a1bb;
 }
 
-.table-button.active{ /*эти свойства применяются если у кнопки будет оба этих класса*/
+.table-button.active { /*эти свойства применяются если у кнопки будет оба этих класса*/
     background-color: #0a61f7;
     color: #fff;
 }
 
-.table-footer td{
+.table-footer td {
     padding: 30px 0;
+}
+
+.create-account-section {
+    padding: 100px;
+}
+
+.list-item {
+    list-style-image: url("./assets/images/Check.svg");
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #363940;
+}
+
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+input, select, fieldset, textarea {
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+    padding: 14px 15px;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, textarea::placeholder, select::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #95a1bb;
+    font-family:  inherit;
+}
+
+input[type="text"]{
+    width: 100%;
+}
+
+input[type="password"], input[type="email"], input[type="date"], select{
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+input [type="date"]::-webkit-calendar-picker-indicator {
+    -moz-background-image: url("./assets/images/Calendar.svg");
+}
+
+select {
+    appearance: none;
+    background-image: url("./assets/images/Arrow-down.svg");
+}
+
+footer{
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    background-color: #0a61f7;
+    padding-top: 20px;
+}
+
+.small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    text-align: center;
+    color: #fff;
 }
 
 
