@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.34375;
+    color: #363940;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #95a1bb;
+}
+
+.header {
+    background: #0a61f7;
+    /*height: 76px;*/
+    padding: 14px 0;
+}
+
+.menu-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    *line-height: 20px; /*1.66667;*/
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    /*text-align: right;*/
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 1.17241;
+    color: #363940;
+    margin-bottom: 30px;
+}
+
+.main-title .text {
+    margin-bottom: 40px;
+}
+
+.button {
+    border-radius: 4px;
+    width: 152px;
+    height: 50px;
+    background-color: #0a61f7;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    /*text-align: center;*/
+    color: #fff;
+}
+
+.rates-section {
+    /*width: 1400px;*/
+    /*height: 625px;*/
+    background-color: #f9fafc;
+    padding: 100px;
+}
+
+.rates-section .title {
+    margin-bottom: 20px;
+}
+
+.rates-section .text{
+margin-bottom: 40px;
+}
+
+.table {
+    border-collapse: collapse;
+    /*убираем отступы между границами таблицы*/
+}
+
+td, th { /*Стилизуем по названию тега*/
+    border: 1px solid #95a1bb; /*цвет стиль и толщина границ таблицы*/
+    width: 240px; /*ширина ячейки*/
+    padding: 15px 0;
+    text-align: center;
+}
+
+.table-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    text-align: center;
+    color: #363940;
+}
+
+.table-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    color: #363940;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-link {
+    color: #0a61f7;
+}
+
+.table-button {
+    border: 1px solid #0a61f7;
+    border-radius: 4px;
+    width: 140px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.63333;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0a61f7;
+    padding: 8px;
+}
+
+.table-subtitle.gray {
+    color: #95a1bb;
+}
+
+.table-button.active { /*эти свойства применяются если у кнопки будет оба этих класса*/
+    background-color: #0a61f7;
+    color: #fff;
+}
+
+.table-footer td {
+    padding: 30px 0;
+}
+
+.create-account-section {
+    padding: 100px;
+}
+
+.list-item {
+    list-style-image: url("./assets/images/Check.svg");
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #363940;
+}
+
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+input, select, fieldset, textarea {
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+    padding: 14px 15px;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, textarea::placeholder, select::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #95a1bb;
+    font-family:  inherit;
+}
+
+input[type="text"]{
+    width: 100%;
+}
+
+input[type="password"], input[type="email"], input[type="date"], select{
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+input [type="date"]::-webkit-calendar-picker-indicator {
+    -moz-background-image: url("./assets/images/Calendar.svg");
+}
+
+select {
+    appearance: none;
+    background-image: url("./assets/images/Arrow-down.svg");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    background-color: #0a61f7;
+    padding-top: 20px;
+}
+
+.small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
