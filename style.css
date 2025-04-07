@@ -222,6 +222,8 @@ input [type="date"]::-webkit-calendar-picker-indicator {
 select {
     appearance: none;
     background-image: url("./assets/images/Arrow-down.svg");
+    background-repeat: no-repeat;
+    padding-left: 20px;
 }
 
 footer{
