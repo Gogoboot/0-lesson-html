@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 ul {
     list-style: none;
 }
@@ -20,6 +24,12 @@ ul {
 button {
     border: none;
     background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-5px);
 }
 
 .title {
@@ -287,6 +297,10 @@ form .button {
 
 input [type="date"]::-webkit-calendar-picker-indicator {
     -moz-background-image: url("./assets/images/Calendar.svg");
+}
+
+input[type="radio"], input[type="checkbox"], input[type="date"], select {
+    cursor: pointer;
 }
 
 select {
