@@ -340,6 +340,30 @@ footer {
     .main-img {
         align-self: center;
     }
+
+    .table {
+        width: 940px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .account-wrapper {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .create-account-section .text {
+        max-width: unset;
+    }
+
+    form {
+        align-self: center;
+    }
+
 }
 
 
