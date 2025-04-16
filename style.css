@@ -83,6 +83,10 @@ display: flex;
     /*text-align: right;*/
 }
 
+.menu-icon {
+    display: none;
+}
+
 /* ============== Стили для 1 секции  ========== */
 
 .main-wrapper{
@@ -327,6 +331,9 @@ footer {
     color: #fff;
 }
 
+
+/*  ======== Адаптив для планшета ========== */
+
 @media screen and (max-width: 1170px) {
     .main-wrapper {
         flex-direction: column;
@@ -363,10 +370,20 @@ footer {
     form {
         align-self: center;
     }
-
 }
 
+/*  ========== Адаптив под мобилки ============== */
 
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
 
 
 
